@@ -1,0 +1,97 @@
+{
+  "name": "@codewithrajat/rm-ng-video-player",
+  "version": "1.0.0",
+  "description": "A high-performance, tree-shakable Angular video player library built with Angular 21, signal-based architecture, and zoneless support",
+  "author": {
+    "name": "Rajat Malik",
+    "email": "mr.rajatmalik@gmail.com",
+    "url": "https://www.rajatmalik.dev/"
+  },
+  "contributors": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/malikrajat/rm-ng-video-player#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malikrajat/rm-ng-video-player.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malikrajat/rm-ng-video-player/issues",
+    "email": "mr.rajatmalik@gmail.com"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "angular",
+    "video player",
+    "media player",
+    "streaming",
+    "rm-ng-video-player",
+    "angular21",
+    "signals",
+    "zoneless",
+    "tree-shakable",
+    "performance",
+    "html5-video",
+    "video-streaming",
+    "media-controls"
+  ],
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/malikrajat"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^21.0.0-next.0",
+    "@angular/core": "^21.0.0-next.0",
+    "rxjs": "^7.8.0"
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "main": "bundles/rm-ng-video-player.umd.js",
+  "module": "fesm2022/codewithrajat-rm-ng-video-player.mjs",
+  "es2020": "fesm2020/rm-ng-video-player.mjs",
+  "esm2022": "esm2022/rm-ng-video-player.mjs",
+  "fesm2022": "fesm2022/rm-ng-video-player.mjs",
+  "fesm2020": "fesm2020/rm-ng-video-player.mjs",
+  "typings": "types/codewithrajat-rm-ng-video-player.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./types/codewithrajat-rm-ng-video-player.d.ts",
+      "esm2022": "./esm2022/rm-ng-video-player.mjs",
+      "es2020": "./fesm2020/rm-ng-video-player.mjs",
+      "es2015": "./fesm2015/rm-ng-video-player.mjs",
+      "node": "./fesm2015/rm-ng-video-player.mjs",
+      "default": "./fesm2022/codewithrajat-rm-ng-video-player.mjs"
+    }
+  }
+}
