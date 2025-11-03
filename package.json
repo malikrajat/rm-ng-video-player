@@ -23,7 +23,7 @@
   "homepage": "https://github.com/malikrajat/rm-ng-video-player#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/malikrajat/rm-ng-video-player.git"
+    "url": "git+https://github.com/malikrajat/rm-ng-video-player.git"
   },
   "bugs": {
     "url": "https://github.com/malikrajat/rm-ng-video-player/issues",
