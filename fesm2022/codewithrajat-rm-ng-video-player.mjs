@@ -585,6 +585,10 @@ class RmNgVideoPlayerComponent {
     initializeCaptions() {
         const video = this.videoElement.nativeElement;
         const textTracks = video.textTracks;
+        // Only proceed if tracks are configured, to prevent errors when no captions are provided.
+        if (!this.config().tracks || this.config().tracks.length === 0) {
+            return;
+        }
         if (textTracks.length > 0) {
             // Set all caption/subtitle tracks to hidden initially
             for (let i = 0; i < textTracks.length; i++) {

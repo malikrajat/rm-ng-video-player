@@ -79,6 +79,10 @@ npm install @codewithrajat/rm-ng-video-player
 ```typescript
 import { Component } from '@angular/core';
 import { RmNgVideoPlayerComponent } from '@codewithrajat/rm-ng-video-player';
+import {
+  VideoSource,
+  VideoPlayerConfig,
+} from '@codewithrajat/rm-ng-video-player';
 
 @Component({
   selector: 'app-home',
@@ -94,20 +98,21 @@ import { RmNgVideoPlayerComponent } from '@codewithrajat/rm-ng-video-player';
   `,
 })
 export class HomeComponent {
-  videoSources = [
+  
+  protected readonly videoSources: VideoSource[] = [
     {
-      url: 'https://example.com/video-4k.mp4',
+      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
       type: 'video/mp4',
       label: '4K',
     },
     {
-      url: 'https://example.com/video-hd.mp4',
+      url: 'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4',
       type: 'video/mp4',
       label: 'HD',
     },
   ];
 
-  videoConfig = {
+  protected readonly videoConfig: VideoPlayerConfig = {
     autoplay: false,
     loop: false,
     muted: false,
@@ -122,7 +127,8 @@ export class HomeComponent {
     seekStep: 10,
     volumeStep: 0.1,
     replayOnEnd: true,
-    poster: 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&h=675&fit=crop',
+    poster:
+      'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&h=675&fit=crop',
     tracks: [
       {
         src: './sample-captions.vtt',
