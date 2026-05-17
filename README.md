@@ -138,6 +138,9 @@ export class AppComponent {
 }
 
 ```
+
+> **Note on Captions:** To use subtitles/captions via the `tracks` config, place your WebVTT (`.vtt`) files in your Angular `public` or `src/assets` directory. For detailed examples, see our [Usage Guide](./docs/usage.md).
+
 ## Live Demo & Playground
 
 #### Try it yourself! Interactive demos available now:

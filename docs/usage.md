@@ -46,6 +46,32 @@ onTimeUpdate(event: VideoPlayerEvent) {
 }
 ```
 
+### Captions and Subtitles
+
+To make your video content accessible and support multiple languages, you can add subtitles or closed captions using the `tracks` property in your `VideoPlayerConfig`. 
+
+Ensure your caption files are in WebVTT format (`.vtt`). In an Angular project, place these files in your `public` directory (for Angular 17+ standalone) or `src/assets` directory so they are served correctly.
+
+```typescript
+protected readonly accessibleConfig = {
+  tracks: [
+    {
+      src: '/sample-captions.vtt', // Path relative to public/assets folder
+      kind: 'subtitles',
+      srclang: 'en',
+      label: 'English Subtitles',
+      default: true // Show this track by default
+    },
+    {
+      src: '/assets/spanish-captions.vtt',
+      kind: 'subtitles',
+      srclang: 'es',
+      label: 'Español Subtítulos'
+    }
+  ]
+};
+```
+
 ### Marketing Landing Pages
 
 For hero videos or background loops, you can hide all controls and enable auto-loop.
