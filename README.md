@@ -34,7 +34,7 @@
 
 <div align="center">
 
-  <img src="https://github.com/malikrajat/rm-ng-video-player/blob/main/assets/demo.png" alt="rm-ng-video-player Demo" width="800"/>
+  <img src="https://github.com/malikrajat/rm-ng-video-player/blob/master/assets/demo.png" alt="rm-ng-video-player Demo" width="800"/>
 
 </div>
 
